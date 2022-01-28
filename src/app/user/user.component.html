@@ -1,0 +1,21 @@
+<div class="items">
+        <h1 class="titre">Moins de 40</h1>
+          <app-people
+            [people]="info"
+            *ngFor="let info of under40">
+          ></app-people>
+        </div>
+        <div class="items">
+              <h1 class="titre">Entre 40 et 60</h1>
+                <app-people
+                  [people]="info"
+                  *ngFor="let info of in40and60"
+                ></app-people>
+              </div>
+              <div class="items">
+                    <h1 class="titre">Plus de 60</h1>
+                      <app-people
+                        [people]="info"
+                        *ngFor="let info of more60"
+                      ></app-people>
+                    </div>
