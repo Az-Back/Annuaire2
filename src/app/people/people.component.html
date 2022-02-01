@@ -6,8 +6,8 @@
     {{ people.name.last }}
     {{ people.gender | uppercase }}
     <img *ngIf="people.dob.age <= 40" [src]="image1">
-<img *ngIf="people.dob.age > 40 && people.dob.age <= 60" [src]="image2">
-<img *ngIf="people.dob.age > 60" [src]="image3">
+    <img *ngIf="people.dob.age > 40 && people.dob.age <= 60" [src]="image2">
+    <img *ngIf="people.dob.age > 60" [src]="image3">
     </div>
     <div>
     <p>Email: {{ people.email }}</p>
